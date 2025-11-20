@@ -13,12 +13,12 @@ export function ExperienceItem({
 }: ExperienceItemProps) {
   return <div className="space-y-2">
       <div className="flex flex-col md:flex-row md:items-baseline md:justify-between gap-2">
-        <h3 className="text-base md:text-lg font-bold">{title}</h3>
+        <h3 className="text-base md:text-lg font-bold dark:text-white">{title}</h3>
         <span className="text-xs md:text-sm text-gray-600 font-medium">
           {period}
         </span>
       </div>
-      <div className="text-sm font-medium text-gray-800">{company}</div>
-      <p className="text-sm text-gray-700 leading-relaxed">{description}</p>
+      <div className="text-sm font-medium text-gray-800 dark:text-gray-300">{company}</div>
+      <p className="text-sm text-gray-700 dark:text-gray-400 leading-relaxed">{description}</p>
     </div>;
 }

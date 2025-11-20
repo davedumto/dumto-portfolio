@@ -6,7 +6,13 @@ export function ASCIIDivider({
   variant?: 'single' | 'double' | 'dotted';
   align?: 'left' | 'center';
 }) {
-  const patterns = {
+  const mobilePatterns = {
+    single: '─'.repeat(40),
+    double: '═'.repeat(40),
+    dotted: '·'.repeat(40)
+  };
+  
+  const desktopPatterns = {
     single: '─'.repeat(80),
     double: '═'.repeat(80),
     dotted: '·'.repeat(80)
@@ -14,9 +20,12 @@ export function ASCIIDivider({
   
   const alignmentClass = align === 'center' ? 'flex justify-center' : '';
   
-  return <div className={`w-full overflow-x-auto ${alignmentClass}`}>
-      <pre className="text-gray-400 text-xs md:text-sm whitespace-nowrap">
-        {patterns[variant]}
+  return <div className={`w-full ${alignmentClass}`}>
+      <pre className="text-gray-400 dark:text-gray-600 text-xs md:text-sm whitespace-nowrap md:hidden">
+        {mobilePatterns[variant]}
+      </pre>
+      <pre className="text-gray-400 dark:text-gray-600 text-xs md:text-sm whitespace-nowrap hidden md:block">
+        {desktopPatterns[variant]}
       </pre>
     </div>;
 }

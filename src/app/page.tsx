@@ -5,17 +5,16 @@ import { ExperienceItem } from '@/components/ExperienceItem';
 
 export default function HomePage() {
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-white dark:bg-black">
       <div className="max-w-6xl mx-auto px-6 py-12">
         <div id="home">
           <Header />
         </div>
 
         <section className="mb-16">
-          <ASCIIDivider variant="double" />
           <div className="py-8">
-            <pre className="text-sm md:text-base font-bold mb-4">[ ABOUT ]</pre>
-            <p className="text-sm md:text-base text-gray-800 leading-relaxed max-w-4xl">
+            <pre className="text-sm md:text-base font-bold mb-4 dark:text-white">[ ABOUT ]</pre>
+            <p className="text-sm md:text-base text-gray-800 dark:text-gray-200 leading-relaxed max-w-4xl">
               Frontend Web Developer with 3+ years of experience building
               responsive, user-focused web applications using modern JavaScript
               frameworks. Proven track record delivering high-quality products
@@ -23,25 +22,24 @@ export default function HomePage() {
               projects.
             </p>
           </div>
-          <ASCIIDivider variant="double" />
         </section>
 
         <section id="projects" className="mb-16">
           <div className="mb-8">
-            <div className="md:hidden space-y-2">
-              <pre className="text-base font-bold">╔═══════════════════╗</pre>
-              <pre className="text-base font-bold">║ FEATURED PROJECTS ║</pre>
-              <pre className="text-base font-bold">╚═══════════════════╝</pre>
+            <div className="md:hidden space-y-0">
+              <pre className="text-base font-bold dark:text-white">╔═══════════════════╗</pre>
+              <pre className="text-base font-bold dark:text-white">║ FEATURED PROJECTS ║</pre>
+              <pre className="text-base font-bold dark:text-white">╚═══════════════════╝</pre>
             </div>
 
             <div className="hidden md:block">
-              <pre className="text-lg font-bold mb-2">
+              <pre className="text-lg font-bold mb-2 dark:text-white">
                 ╔═══════════════════════════════════════╗
               </pre>
-              <pre className="text-lg font-bold mb-2">
+              <pre className="text-lg font-bold mb-2 dark:text-white">
                 ║ FEATURED PROJECTS ║
               </pre>
-              <pre className="text-lg font-bold">
+              <pre className="text-lg font-bold dark:text-white">
                 ╚═══════════════════════════════════════╝
               </pre>
             </div>
@@ -68,7 +66,7 @@ export default function HomePage() {
               title="Young and Skilled" 
               description="Youth empowerment platform connecting young professionals with skill development opportunities and career advancement resources. Built responsive interface with interactive features for skill tracking." 
               techStack={['React', 'JavaScript', 'Responsive Design', 'UI/UX']} 
-              link="#" 
+              link="https://www.youngandskilled.org" 
               previewImage="/young and skilled.png" 
             />
           </div>
@@ -77,15 +75,15 @@ export default function HomePage() {
         <section id="experience" className="mb-16">
           <div className="mb-8">
             <div className="md:hidden space-y-2">
-              <pre className="text-base font-bold">{'─'.repeat(25)}</pre>
-              <pre className="text-base font-bold">EXPERIENCE</pre>
-              <pre className="text-base font-bold">{'─'.repeat(25)}</pre>
+              <pre className="text-base font-bold dark:text-white">{'─'.repeat(25)}</pre>
+              <pre className="text-base font-bold dark:text-white">EXPERIENCE</pre>
+              <pre className="text-base font-bold dark:text-white">{'─'.repeat(25)}</pre>
             </div>
 
             <div className="hidden md:block">
-              <pre className="text-lg font-bold">{'─'.repeat(50)}</pre>
-              <pre className="text-lg font-bold my-2"> EXPERIENCE</pre>
-              <pre className="text-lg font-bold">{'─'.repeat(50)}</pre>
+              <pre className="text-lg font-bold dark:text-white">{'─'.repeat(50)}</pre>
+              <pre className="text-lg font-bold my-2 dark:text-white"> EXPERIENCE</pre>
+              <pre className="text-lg font-bold dark:text-white">{'─'.repeat(50)}</pre>
             </div>
           </div>
 
@@ -93,7 +91,7 @@ export default function HomePage() {
             <ExperienceItem 
               title="Lead Frontend Developer" 
               company="Fominance" 
-              period="Dec 2023 - Present" 
+              period="Dec 2023 - Aug 2024" 
               description="Leading frontend development initiatives, architecting scalable React applications, and mentoring junior developers." 
             />
 
@@ -120,7 +118,7 @@ export default function HomePage() {
             <ExperienceItem 
               title="Open Source Contributor" 
               company="OnlyDust" 
-              period="2023 - Present" 
+              period=" Dec 2024 - Present" 
               description="Top-rated contributor making massive contributions to major Web3 and blockchain projects, collaborating with global development teams." 
             />
           </div>
@@ -129,31 +127,31 @@ export default function HomePage() {
         <section className="mb-16">
           <div className="mb-6">
             <div className="md:hidden space-y-0">
-              <pre className="text-base font-bold">╭{'─'.repeat(22)}╮</pre>
-              <pre className="text-base font-bold">│ TECHNICAL SKILLS │</pre>
-              <pre className="text-base font-bold">╰{'─'.repeat(22)}╯</pre>
+              <pre className="text-base font-bold dark:text-white">╭{'─'.repeat(22)}╮</pre>
+              <pre className="text-base font-bold dark:text-white">│ TECHNICAL SKILLS │</pre>
+              <pre className="text-base font-bold dark:text-white">╰{'─'.repeat(22)}╯</pre>
             </div>
 
             <div className="hidden md:block">
-              <pre className="text-lg font-bold">╭{'─'.repeat(48)}╮</pre>
-              <pre className="text-lg font-bold">│ TECHNICAL SKILLS │</pre>
-              <pre className="text-lg font-bold">╰{'─'.repeat(48)}╯</pre>
+              <pre className="text-lg font-bold dark:text-white">╭{'─'.repeat(48)}╮</pre>
+              <pre className="text-lg font-bold dark:text-white">│ TECHNICAL SKILLS │</pre>
+              <pre className="text-lg font-bold dark:text-white">╰{'─'.repeat(48)}╯</pre>
             </div>
           </div>
 
-          <div className="bg-black text-white p-6 md:p-8 font-mono text-xs md:text-sm space-y-3">
+          <div className="bg-black dark:bg-white text-white dark:text-black p-6 md:p-8 font-mono text-xs md:text-sm space-y-3">
             <div className="flex flex-col md:flex-row gap-2">
-              <span className="text-gray-400 min-w-[100px]">Frontend:</span>
+              <span className="text-gray-400 dark:text-gray-600 min-w-[100px]">Frontend:</span>
               <span>
                 JavaScript | HTML5 | CSS3 | React | Next.js | Nuxt.js | Redux
               </span>
             </div>
             <div className="flex flex-col md:flex-row gap-2">
-              <span className="text-gray-400 min-w-[100px]">Styling:</span>
+              <span className="text-gray-400 dark:text-gray-600 min-w-[100px]">Styling:</span>
               <span>Tailwind CSS | Bootstrap | Sass | Responsive Design</span>
             </div>
             <div className="flex flex-col md:flex-row gap-2">
-              <span className="text-gray-400 min-w-[100px]">Tools:</span>
+              <span className="text-gray-400 dark:text-gray-600 min-w-[100px]">Tools:</span>
               <span>Git | GitHub | API Integration | REST APIs</span>
             </div>
           </div>
@@ -162,24 +160,24 @@ export default function HomePage() {
         <section className="mb-16">
           <div className="mb-6">
             <div className="md:hidden space-y-0">
-              <pre className="text-base font-bold">┏━━━━━━━━━━━━━━━━━━┓</pre>
-              <pre className="text-base font-bold">┃ BEYOND CODE ┃</pre>
-              <pre className="text-base font-bold">┗━━━━━━━━━━━━━━━━━━┛</pre>
+              <pre className="text-base font-bold dark:text-white">┏━━━━━━━━━━━┓</pre>
+              <pre className="text-base font-bold dark:text-white">┃ BEYOND CODE ^_^</pre>
+              <pre className="text-base font-bold dark:text-white">┗━━━━━━━━━━━┛</pre>
             </div>
 
             <div className="hidden md:block">
-              <pre className="text-lg font-bold">
-                ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+              <pre className="text-lg font-bold dark:text-white">
+                ┏━━━━━━━━━━┓
               </pre>
-              <pre className="text-lg font-bold">┃ BEYOND CODE ┃</pre>
-              <pre className="text-lg font-bold">
-                ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+              <pre className="text-lg font-bold dark:text-white">┃ BEYOND CODE ^_^</pre>
+              <pre className="text-lg font-bold dark:text-white">
+                ┗━━━━━━━━━━┛
               </pre>
             </div>
           </div>
 
-          <div className="border-4 border-black p-6 md:p-8 bg-gray-50">
-            <p className="text-sm md:text-base text-gray-800 leading-relaxed mb-6">
+          <div className="border-4 border-black dark:border-white p-6 md:p-8 bg-gray-50 dark:bg-gray-800">
+            <p className="text-sm md:text-base text-gray-800 dark:text-gray-200 leading-relaxed mb-6">
               I&apos;m not your typical developer—I&apos;m also a passionate public
               speaker sharing insights on web development, tech innovation, and
               building scalable products. Check out my speaking portfolio to see
@@ -190,18 +188,16 @@ export default function HomePage() {
               href="https://www.ejere.site" 
               target="_blank" 
               rel="noopener noreferrer" 
-              className="inline-block text-sm md:text-base font-bold border-4 border-black bg-white hover:bg-black hover:text-white px-6 py-3 transition-colors"
+              className="inline-block text-sm md:text-base font-bold border-4 border-black dark:border-white bg-white dark:bg-gray-900 dark:text-white hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black px-6 py-3 transition-colors"
             >
               Speaker Portfolio → www.ejere.site
             </a>
           </div>
         </section>
 
-        <footer id="contact" className="border-t-2 border-black pt-8">
-          <ASCIIDivider variant="double" />
-
+        <footer className="border-t-2 border-black dark:border-white pt-8">
           <div className="py-8 space-y-6">
-            <pre className="text-sm md:text-base font-bold">[ CONNECT ]</pre>
+            <pre className="text-sm md:text-base font-bold dark:text-white">[ CONNECT ]</pre>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm">
               <div className="space-y-2">
@@ -209,7 +205,7 @@ export default function HomePage() {
                   href="https://github.com/davedumto/" 
                   target="_blank" 
                   rel="noopener noreferrer" 
-                  className="block hover:underline font-medium"
+                  className="block hover:underline font-medium dark:text-white"
                 >
                   → GitHub: github.com/davedumto
                 </a>
@@ -217,7 +213,7 @@ export default function HomePage() {
                   href="https://app.onlydust.com/u/davedumto" 
                   target="_blank" 
                   rel="noopener noreferrer" 
-                  className="block hover:underline font-medium"
+                  className="block hover:underline font-medium dark:text-white"
                 >
                   → OnlyDust: app.onlydust.com/u/davedumto
                 </a>
@@ -228,24 +224,25 @@ export default function HomePage() {
                   href="https://www.ejere.site" 
                   target="_blank" 
                   rel="noopener noreferrer" 
-                  className="block hover:underline font-medium"
+                  className="block hover:underline font-medium dark:text-white"
                 >
                   → Speaker Portfolio: www.ejere.site
                 </a>
                 <a 
-                  href="mailto:Ejeredavid2001@gmail.com" 
-                  className="block hover:underline font-medium"
+                  href="mailto:contact@ejere.site" 
+                  className="block hover:underline font-medium dark:text-white"
                 >
-                  → Email: Ejeredavid2001@gmail.com
+                  → Email: contact@ejere.site
                 </a>
               </div>
             </div>
+
           </div>
 
-          <ASCIIDivider variant="double"  />
+          <ASCIIDivider variant="double" />
 
-          <div className="text-center text-xs text-gray-600 mt-6">
-            <pre>© {new Date().getFullYear()} EJERE DAVID · FRONTEND DEVELOPER</pre>
+          <div className="text-center text-xs text-gray-600 dark:text-gray-400 mt-6">
+            <pre>© {new Date().getFullYear()} EJERE DAVID · FULLSTACK DEVELOPER</pre>
           </div>
         </footer>
       </div>
