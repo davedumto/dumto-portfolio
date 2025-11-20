@@ -9,7 +9,6 @@ export default function HomePage() {
       <div className="max-w-6xl mx-auto px-6 py-12">
         <Header />
 
-        {/* About Section */}
         <section className="mb-16">
           <ASCIIDivider variant="double" />
           <div className="py-8">
@@ -25,17 +24,14 @@ export default function HomePage() {
           <ASCIIDivider variant="double" />
         </section>
 
-        {/* Featured Projects */}
         <section id="projects" className="mb-16">
           <div className="mb-8">
-            {/* Mobile: Simpler header */}
             <div className="md:hidden space-y-2">
               <pre className="text-base font-bold">╔═══════════════════╗</pre>
               <pre className="text-base font-bold">║ FEATURED PROJECTS ║</pre>
               <pre className="text-base font-bold">╚═══════════════════╝</pre>
             </div>
 
-            {/* Desktop: Full decorative header */}
             <div className="hidden md:block">
               <pre className="text-lg font-bold mb-2">
                 ╔═══════════════════════════════════════╗
@@ -76,17 +72,14 @@ export default function HomePage() {
           </div>
         </section>
 
-        {/* Experience */}
         <section id="experience" className="mb-16">
           <div className="mb-8">
-            {/* Mobile: Shorter dashes */}
             <div className="md:hidden space-y-2">
               <pre className="text-base font-bold">{'─'.repeat(25)}</pre>
               <pre className="text-base font-bold">EXPERIENCE</pre>
               <pre className="text-base font-bold">{'─'.repeat(25)}</pre>
             </div>
 
-            {/* Desktop: Full dashes */}
             <div className="hidden md:block">
               <pre className="text-lg font-bold">{'─'.repeat(50)}</pre>
               <pre className="text-lg font-bold my-2"> EXPERIENCE</pre>
@@ -131,17 +124,14 @@ export default function HomePage() {
           </div>
         </section>
 
-        {/* Technical Skills */}
         <section className="mb-16">
           <div className="mb-6">
-            {/* Mobile: Shorter box */}
             <div className="md:hidden space-y-0">
               <pre className="text-base font-bold">╭{'─'.repeat(22)}╮</pre>
               <pre className="text-base font-bold">│ TECHNICAL SKILLS │</pre>
               <pre className="text-base font-bold">╰{'─'.repeat(22)}╯</pre>
             </div>
 
-            {/* Desktop: Full box */}
             <div className="hidden md:block">
               <pre className="text-lg font-bold">╭{'─'.repeat(48)}╮</pre>
               <pre className="text-lg font-bold">│ TECHNICAL SKILLS │</pre>
@@ -167,17 +157,14 @@ export default function HomePage() {
           </div>
         </section>
 
-        {/* Beyond Code */}
         <section className="mb-16">
           <div className="mb-6">
-            {/* Mobile: Shorter box */}
             <div className="md:hidden space-y-0">
               <pre className="text-base font-bold">┏━━━━━━━━━━━━━━━━━━┓</pre>
               <pre className="text-base font-bold">┃ BEYOND CODE ┃</pre>
               <pre className="text-base font-bold">┗━━━━━━━━━━━━━━━━━━┛</pre>
             </div>
 
-            {/* Desktop: Full box */}
             <div className="hidden md:block">
               <pre className="text-lg font-bold">
                 ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
@@ -208,7 +195,6 @@ export default function HomePage() {
           </div>
         </section>
 
-        {/* Footer */}
         <footer id="contact" className="border-t-2 border-black pt-8">
           <ASCIIDivider variant="double" />
 
@@ -257,7 +243,7 @@ export default function HomePage() {
           <ASCIIDivider variant="double"  />
 
           <div className="text-center text-xs text-gray-600 mt-6">
-            <pre>© 2024 EJERE DAVID · FRONTEND DEVELOPER</pre>
+            <pre>© {new Date().getFullYear()} EJERE DAVID · FRONTEND DEVELOPER</pre>
           </div>
         </footer>
       </div>
