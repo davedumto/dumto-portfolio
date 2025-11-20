@@ -33,11 +33,11 @@ export function Header() {
 
   return <header className="border-2 border-black dark:border-white p-8 mb-12 mt-20">
       <nav className="fixed top-0 left-0 right-0 w-full bg-white dark:bg-black z-50 py-4 border-b border-gray-200 dark:border-gray-700">
-        <div className="max-w-6xl mx-auto px-6 flex items-center justify-between">
-          <div className="flex items-center gap-6 text-sm md:text-base justify-center md:justify-end flex-1">
+        <div className="max-w-6xl mx-auto px-3 sm:px-6 flex items-center justify-between">
+          <div className="flex items-center gap-2 sm:gap-4 md:gap-6 text-xs sm:text-sm md:text-base justify-center md:justify-end flex-1">
             <a 
               href="#home" 
-              className={`px-3 py-1 border border-black dark:border-white transition-colors font-medium ${
+              className={`px-2 sm:px-3 py-1 border border-black dark:border-white transition-colors font-medium ${
                 activeSection === 'home' 
                   ? 'bg-black text-white dark:bg-white dark:text-black' 
                   : 'hover:underline dark:text-white'
@@ -47,7 +47,7 @@ export function Header() {
             </a>
             <a 
               href="#projects" 
-              className={`px-3 py-1 border border-black dark:border-white transition-colors font-medium ${
+              className={`px-2 sm:px-3 py-1 border border-black dark:border-white transition-colors font-medium ${
                 activeSection === 'projects' 
                   ? 'bg-black text-white dark:bg-white dark:text-black' 
                   : 'hover:underline dark:text-white'
@@ -57,7 +57,7 @@ export function Header() {
             </a>
             <a 
               href="#experience" 
-              className={`px-3 py-1 border border-black dark:border-white transition-colors font-medium ${
+              className={`px-2 sm:px-3 py-1 border border-black dark:border-white transition-colors font-medium ${
                 activeSection === 'experience' 
                   ? 'bg-black text-white dark:bg-white dark:text-black' 
                   : 'hover:underline dark:text-white'
@@ -66,7 +66,7 @@ export function Header() {
               Experience
             </a>
           </div>
-          <div className="ml-6">
+          <div className="ml-2 sm:ml-4 md:ml-6">
             <ThemeToggle />
           </div>
         </div>
@@ -97,7 +97,7 @@ export function Header() {
         </div>
 
         <div className="flex justify-center md:justify-end">
-          <div className="relative w-32 h-32 md:w-60 md:h-60 rounded-full bg-gray-200 dark:bg-black border-2 border-black dark:border-white overflow-hidden flex-shrink-0">
+          <div className="relative w-24 h-24 sm:w-32 sm:h-32 lg:w-48 lg:h-48 xl:w-60 xl:h-60 rounded-full bg-gray-200 dark:bg-black border-2 border-black dark:border-white overflow-hidden flex-shrink-0">
             <Image 
               src="/david.jpeg" 
               alt="Ejere David - Frontend Developer" 
