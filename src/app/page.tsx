@@ -7,7 +7,9 @@ export default function HomePage() {
   return (
     <div className="min-h-screen bg-white">
       <div className="max-w-6xl mx-auto px-6 py-12">
-        <Header />
+        <div id="home">
+          <Header />
+        </div>
 
         <section className="mb-16">
           <ASCIIDivider variant="double" />
