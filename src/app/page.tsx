@@ -47,6 +47,22 @@ export default function HomePage() {
 
           <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-8">
             <ProjectCard 
+              title="FoundHerTable" 
+              description="Community-driven platform connecting women through shared dining experiences and networking opportunities. Features event discovery, table booking, and community building tools with intuitive user interface design." 
+              techStack={['React', 'Next.js', 'TypeScript', 'Tailwind CSS']} 
+              link="https://www.foundhertable.com" 
+              previewImage="/foundhertable.png" 
+            />
+
+            <ProjectCard 
+              title="Himspired" 
+              description="Modern thrift clothing brand e-commerce platform featuring curated sustainable fashion collections. Built with responsive design, product catalogs, and seamless shopping experience for conscious consumers." 
+              techStack={['React', 'Next.js', 'E-commerce', 'Responsive Design']} 
+              link="https://www.himspired.store/" 
+              previewImage="/himspired.png" 
+            />
+
+            <ProjectCard 
               title="BridgeAfrica" 
               description="Infrastructure tracking platform documenting Africa's major development projects with real-time data visualization. Implemented complex data filtering systems and interactive project mapping features." 
               techStack={['Next.js', 'React', 'TypeScript', 'Tailwind CSS']} 
